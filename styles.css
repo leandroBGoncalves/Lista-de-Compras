@@ -156,16 +156,16 @@ header {
 
 /* table ============================ */
 
-/*#transaction {
+#transaction {
     display: block;
     width: 100%;
     overflow-x: auto;
 }
-*/
+
 #data-table {
     width: 100%;
     border-spacing: 0 0.5rem;
-    color: #969cb3;
+    color: #646775;
 }
 
 table thead tr th:first-child,
@@ -192,11 +192,13 @@ table tbody td {
 }
 
 table tbody tr {
-    opacity: 0.7;
+    opacity: 1;
+
 }
 
 table tbody tr:hover {
-    opacity: 1;
+    opacity: 5;
+    color: rgb(44, 197, 6);
 }
 
 td.description {
@@ -244,7 +246,7 @@ td.expense {
 /* form ============================ */
 
 #form {
-    max-width: 500px;
+    max-width: 700px;
 }
 
 #form h2 {
@@ -261,12 +263,19 @@ td.expense {
 }
 
 .product {
-    width: 50%;
-    display: flex;
+    width: 100%;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
 }
 
+.description {
+    width: 80%;
+}
+
+.quantidade {
+    width: 20%;
+}
 
 .input-group {
     margin-top: 0.8rem;
@@ -277,6 +286,7 @@ td.expense {
 }
 
 .input-group.actions {
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;

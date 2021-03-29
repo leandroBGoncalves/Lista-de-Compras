@@ -63,13 +63,24 @@
                 <thead>
                     <tr>
                         <th>Produto</th>
-                        <th>Qauntidade</th>
-                        <th>Valor</th>
-                        <th></th>
+                        <th>Quantidade</th>
+                        <th>Valor Unitário</th>
+                        <th>Valor Total</th>
                     </tr>
                 </thead>
                 <tbody>
-
+                    <tr>
+                        <td>Arroz</td>
+                        <td>01</td>
+                        <td>R$29,90</td>
+                        <td>R$29,90</td>
+                    </tr>
+                    <tr>
+                        <td>Feijão</td>
+                        <td>03</td>
+                        <td>R$5,80</td>
+                        <td>R$17,40</td>
+                    </tr>
                 </tbody>
             </table>
         </section>
@@ -88,22 +99,19 @@
                 </h2>
 
                 <form action="" onsubmit="form.submit(event)">
-                    <div class="input-group">
-                        <small>Produto</small>
+
+                    <div  class="product">
                         <label class="sr-only" for="description">Descrição do Produto</label>
-                        <input type="text" id="description" name="description" 
-                        placeholder="Produto" class="product">
-                    </div>
-                    <div class="input-group">
+                        <input type="text" name="description" 
+                        placeholder="Produto" class="description" size="90">
+
                         <label class="sr-only" for="date">Data</label>
-                        <input type="number" id="date" name="date" 
-                        placeholder="Quantidade" class="product">
+                        <input type="number" name="date" 
+                        placeholder="Quantidade" class="Quantidade" size="7">
                     </div>
-                    <div class="input-group">
-                        <label class="sr-only" for="amount">Valor</label>
-                        <input type="number" step="0.01" id="amount" name="amount" 
-                        placeholder="0,00" class="input-Valor"/>
-                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais</small>
+                    <div>
+                        <small class="help">Selecione aqui para alterar a quantidade para Kg</small>
+
                     </div>
 
                     <div class="input-group actions">
